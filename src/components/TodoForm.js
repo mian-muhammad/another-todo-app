@@ -2,7 +2,8 @@ import React from 'react';
 
 const TodoForm = ({ todo, error, newTodo, addTodo }) => {
 	return (
-		<div>
+		<div className="todoForm">
+			<h1>Another TodoApp</h1>
 			<input
 				type="text"
 				onChange={(e) => newTodo(e)}

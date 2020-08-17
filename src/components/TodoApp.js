@@ -54,8 +54,7 @@ class TodoApp extends Component {
 	render() {
 		const { newTodo, error, todos } = this.state;
 		return (
-			<div>
-				<h1>Another TodoApp</h1>
+			<>
 				<TodoForm
 					todo={newTodo}
 					error={error}
@@ -67,7 +66,7 @@ class TodoApp extends Component {
 					toggleTodoDone={this.toggleTodoDone.bind(this)}
 					removeTodo={this.removeTodo.bind(this)}
 				/>
-			</div>
+			</>
 		);
 	}
 }

@@ -8,8 +8,12 @@ const ListItem = ({ item, index, toggleTodoDone, removeTodo }) => {
 				onChange={(e) => toggleTodoDone(e, index)}
 				checked={item.done}
 			/>
-			<span>{item.title}</span>
-			<button onClick={() => removeTodo(index)}>Remove Todo</button>
+			<span className="light">{item.title}</span>
+			<button onClick={() => removeTodo(index)}>
+				<span role="img" aria-label="cross">
+					❌
+				</span>
+			</button>
 		</li>
 	);
 };
